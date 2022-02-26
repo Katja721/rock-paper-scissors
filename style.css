@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  background-position-y: -25rem;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+/*Scissors Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%)
+- Paper Gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%)
+- Rock Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%)
+- Lizard Gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%)
+- Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%)*/
+.box {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+  margin: 0rem 18rem;
+  border: 2px solid hsl(217, 16%, 45%);
+  border-radius: 10px;
+  padding: 2rem;
+  z-index: 3;
+}
+.scoreSqaure {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%;
+  border-radius: 5px;
+  padding: 1rem 0rem;
+}
+.btnRock {
+  position: relative;
+  transform: scale(1);
+  left: 38rem;
+  top: -8rem;
+  border-radius: 60px;
+  padding: 1rem;
+  border-top: 15px solid hsl(349, 70%, 56%);
+  border-bottom: 15px solid hsl(349, 71%, 52%);
+  border-right: 15px solid hsl(349, 70%, 56%);
+  border-left: 15px solid hsl(349, 70%, 56%);
+}
+.btnPaper {
+  position: relative;
+  left: 23rem;
+  top: -23rem;
+  border-radius: 60px;
+  padding: 0.8rem 1rem;
+  border-top: 15px solid hsl(230, 89%, 65%);
+  border-bottom: 15px solid hsl(230, 89%, 62%);
+  border-right: 15px solid hsl(230, 89%, 65%);
+  border-left: 15px solid hsl(230, 89%, 65%);
+}
+.btnScissors {
+  position: relative;
+  left: 32rem;
+  top: -23rem;
+  border-radius: 60px;
+  padding: 0.8rem 1rem;
+  border-top: 15px solid hsl(40, 84%, 53%);
+  border-bottom: 15px solid hsl(39, 89%, 49%);
+  border-right: 15px solid hsl(40, 84%, 53%);
+  border-left: 15px solid hsl(40, 84%, 53%);
+}
+.triangle {
+  margin: 8rem 10rem;
+}
+.scoreSqaure p {
+  font-weight: 600;
+  font-size: 0.8em;
+  margin: 0;
+}
+.score {
+  font-weight: 700;
+  font-size: 2em;
+}
+.rules {
+  position: fixed;
+  left: 72rem;
+  top: 38rem;
+  background: none;
+  border: 2px solid hsl(217, 16%, 45%);
+  padding: 0.3rem 1.8rem;
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+}
+.module {
+  background-color: hsl(0, 0%, 100%);
+  width: fit-content;
+  position: fixed;
+  top: 8rem;
+  left: 28rem;
+  z-index: 1;
+  opacity: 100%;
+  padding: 4rem 1rem;
+  border-radius: 10px;
+}
+.close {
+  z-index: 2;
+  position: relative;
+  top: -18rem;
+}
+.overlay {
+  position: fixed;
+  background-color: hsla(0, 0%, 0%, 0.4);
+  padding: 40rem;
+  top: 0em;
+  left: 0rem;
+}
+.hidden {
+  display: none;
+}
+.btnRockHouse {
+  position: relative;
+  /* left: 3rem;
+  top: -8rem; */
+  /* box-shadow: 0px 0px 0px 10px hsla(212, 14%, 21%, 0.5),
+    0px 0px 0px 30px hsla(225, 33%, 24%, 0.5),
+    0px 0px 0px 50px hsla(224, 37%, 24%, 0.5); */
+  border-radius: 60px;
+  padding: 1rem;
+  border-top: 15px solid hsl(349, 70%, 56%);
+  border-bottom: 15px solid hsl(349, 71%, 52%);
+  border-right: 15px solid hsl(349, 70%, 56%);
+  border-left: 15px solid hsl(349, 70%, 56%);
+  z-index: 5;
+}
+.btnPaperHouse {
+  position: relative;
+  /* left: 3rem;
+  top: -3rem; */
+  border-radius: 60px;
+  padding: 0.8rem 1rem;
+  border-top: 15px solid hsl(230, 89%, 65%);
+  border-bottom: 15px solid hsl(230, 89%, 62%);
+  border-right: 15px solid hsl(230, 89%, 65%);
+  border-left: 15px solid hsl(230, 89%, 65%);
+}
+.btnScissorsHouse {
+  position: relative;
+  /* left: 2rem;
+  top: -3rem; */
+  border-radius: 60px;
+  padding: 0.8rem 1rem;
+  border-top: 15px solid hsl(40, 84%, 53%);
+  border-bottom: 15px solid hsl(39, 89%, 49%);
+  border-right: 15px solid hsl(40, 84%, 53%);
+  border-left: 15px solid hsl(40, 84%, 53%);
+}
+.resultParagraph {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  width: fit-content;
+  position: relative;
+  left: 32.5rem;
+  top: -11rem;
+  /* padding: 1rem 4rem; */
+  border-radius: 10px;
+  font-size: 3rem;
+}
+.again {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  border: none;
+  padding: 1rem 5rem;
+  position: fixed;
+  top: 24rem;
+  left: 31.5rem;
+}
+@media screen and (max-width: 400px) {
+  .box img {
+    width: 40%;
+  }
+  .box {
+    margin: 0rem 3rem;
+    width: 70%;
+    padding: 1rem;
+  }
+  .scoreSqaure {
+    width: 35%;
+  }
+  .triangle {
+    margin: 0rem 2rem 11rem 2rem;
+  }
+  .btnRock {
+    left: 8rem;
+    top: 20rem;
+  }
+  .btnPaper {
+    left: -7rem;
+    top: 4rem;
+  }
+  .btnScissors {
+    left: 1rem;
+    top: 4rem;
+  }
+  .again {
+    top: 30rem;
+    left: 4rem;
+  }
+  .resultParagraph {
+    left: 5rem;
+    top: 0rem;
+  }
+  .rules {
+    left: 8rem;
+    top: 37rem;
+  }
+  .module {
+    border-radius: 0px;
+    top: 0rem;
+    left: 0rem;
+    padding: 13rem 2rem;
+  }
+  .close {
+    top: 8rem;
+    left: 9rem;
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 401px) {
+  .box {
+    margin: 1rem;
+    width: 78%;
+  }
+  .scoreSqaure {
+    width: 26%;
+  }
+  .triangle {
+    margin: 0rem 4rem;
+  }
+  .btnPaper {
+    left: -6rem;
+    top: 4rem;
+  }
+  .btnScissors {
+    left: 3.5rem;
+    top: 4rem;
+  }
+  .btnRock {
+    left: 10rem;
+    top: 20rem;
+  }
+  .attribution {
+    margin-top: 9rem;
+  }
+  .resultParagraph {
+    left: 8.5rem;
+    top: -1rem;
+  }
+  .rules {
+    left: 11rem;
+    top: 43rem;
+  }
+  .again {
+    top: 33rem;
+    left: 6.5rem;
+  }
+  .module {
+    border-radius: 0px;
+    top: 0rem;
+    left: 0rem;
+    padding: 16rem 4rem;
+  }
+  .close {
+    top: 5rem;
+    left: 9rem;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 501px) {
+  .box {
+    margin: 0rem 5rem;
+    width: 72%;
+  }
+  .triangle {
+    margin: -2rem 14rem;
+  }
+  .btnRock {
+    left: 20rem;
+    top: 18rem;
+  }
+  .btnPaper {
+    left: 4rem;
+    top: 3rem;
+  }
+  .btnScissors {
+    left: 14rem;
+    top: 2rem;
+  }
+  .attribution {
+    margin-top: 13rem;
+  }
+  .resultParagraph {
+    left: 18.5rem;
+    top: -7rem;
+  }
+  .again {
+    top: 28rem;
+    left: 17.5rem;
+  }
+} ;

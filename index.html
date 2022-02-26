@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="box">
+      <img src="/images/logo.svg" />
+      <div class="scoreSqaure">
+        <p>SCORE</p>
+        <span class="score">0</span>
+      </div>
+    </div>
+    <div class="player">
+      <button class="btnRock">
+        <img src="/images/icon-rock.svg" alt="rock" class="rock" />
+      </button>
+      <button class="btnPaper">
+        <img src="/images/icon-paper.svg" alt="paper" class="paper" />
+      </button>
+      <button class="btnScissors">
+        <img src="/images/icon-scissors.svg" alt="scissors" class="scissors" />
+      </button>
+      <img src="/images/bg-triangle.svg" class="triangle" />
+    </div>
+    <div class="house">
+      <button class="btnRockHouse hidden">
+        <img src="/images/icon-rock.svg" alt="rock" class="rock" />
+      </button>
+      <button class="btnPaperHouse hidden">
+        <img src="/images/icon-paper.svg" alt="paper" class="paper" />
+      </button>
+      <button class="btnScissorsHouse hidden">
+        <img src="/images/icon-scissors.svg" alt="scissors" class="scissors" />
+      </button>
+    </div>
+    <button class="rules">RULES</button>
+    <button class="again hidden">PLAY AGAIN</button>
+    <!-- Score Rules You Picked The House Picked You Win You Lose Play Again -->
+    <h1 class="resultParagraph hidden"></h1>
+
+    <div class="overlay hidden">
+      <div class="module">
+        <img src="/images/image-rules.svg" /><img
+          src="/images/icon-close.svg"
+          class="close"
+        />
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+  <script src="/script.js"></script>
+</html>
