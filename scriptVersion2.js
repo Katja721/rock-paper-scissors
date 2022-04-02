@@ -5,7 +5,9 @@ let media = window.matchMedia('(max-width: 399px)'); //phones to 399px
 let media2 =
   window.matchMedia('(min-width:400px)') &&
   window.matchMedia('(max-width: 699px)'); //phones above 400px
-let media3 = window.matchMedia('(min-width:700px)'); //tablets
+let media3 =
+  window.matchMedia('(min-width:700px)') &&
+  window.matchMedia('(max-width:1000px)'); //tablets
 console.log(media);
 console.log(media2);
 console.log(media3);
@@ -26,12 +28,12 @@ const spockBtnHouse2 = document.querySelector('.spockBtnHouse2');
 //other buttons
 const again = document.querySelector('.again2');
 const rules = document.querySelector('.rules2');
-const close = document.querySelector('.close');
+const close = document.querySelector('.close2');
 
 //other elements
 const resultParagraph = document.querySelector('.resultParagraph2');
 let scoreElement = document.querySelector('.score');
-const overlay = document.querySelector('.overlay');
+const overlay = document.querySelector('.overlay2');
 const pentagon = document.querySelector('.pentagon');
 //choices
 const computerChoices = ['paper', 'scissors', 'rock', 'lizard', 'spock'];
@@ -93,7 +95,7 @@ rockBtn2.addEventListener('click', function () {
     spockBtn2,
     pentagon
   );
-  moveElement(rockBtn2, '1rem', '8rem');
+  moveElement(rockBtn2, '15rem', '8rem');
 
   if (computerChoose === 'paper' || computerChoose === 'lizard') {
     resultParagraph.textContent = 'YOU WIN';
@@ -124,7 +126,7 @@ paperBtn2.addEventListener('click', function () {
     spockBtn2,
     pentagon
   );
-  moveElement(paperBtn2, '1rem', '8rem');
+  moveElement(paperBtn2, '15rem', '8rem');
 
   if (computerChoose === 'scissors' || computerChoose === 'spock') {
     resultParagraph.textContent = 'YOU WIN';
@@ -156,7 +158,7 @@ scissorsBtn2.addEventListener('click', function () {
     spockBtn2,
     pentagon
   );
-  moveElement(scissorsBtn2, '1rem', '8rem');
+  moveElement(scissorsBtn2, '15rem', '8rem');
   if (computerChoose === 'paper' || computerChoose === 'lizard') {
     resultParagraph.textContent = 'YOU WIN';
     scissorsBtn2.style.boxShadow =
@@ -186,7 +188,7 @@ lizardBtn2.addEventListener('click', function () {
     spockBtn2,
     pentagon
   );
-  moveElement(lizardBtn2, '1rem', '8rem');
+  moveElement(lizardBtn2, '15rem', '8rem');
   if (computerChoose === 'paper' || computerChoose === 'spock') {
     resultParagraph.textContent = 'YOU WIN';
     lizardBtn2.style.boxShadow =
@@ -216,7 +218,7 @@ spockBtn2.addEventListener('click', function () {
     paperBtn2,
     pentagon
   );
-  moveElement(spockBtn2, '1rem', '8rem');
+  moveElement(spockBtn2, '15rem', '8rem');
   if (computerChoose === 'rock' || computerChoose === 'scissors') {
     resultParagraph.textContent = 'YOU WIN';
     spockBtn2.style.boxShadow =
