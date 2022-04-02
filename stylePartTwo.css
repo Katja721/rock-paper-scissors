@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+.hidden {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  display: none;
+}
+.rockBtn2 {
+  position: relative;
+  border: double 10px transparent;
+  border-radius: 60px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom, hsl(349, 70%, 56%), hsl(349, 71%, 52%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  top: 22rem;
+  left: 51rem;
+}
+.rockBtn2 img {
+  margin: 1rem;
+}
+.paperBtn2 {
+  position: relative;
+  border: double 10px transparent;
+  border-radius: 60px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom, hsl(230, 89%, 65%), hsl(230, 89%, 62%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  top: 11rem;
+  left: 47rem;
+}
+.paperBtn2 img {
+  margin: 1rem;
+}
+.scissorsBtn2 {
+  position: relative;
+  border: double 10px transparent;
+  border-radius: 60px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom, hsl(40, 84%, 53%), hsl(39, 89%, 49%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  top: 4rem;
+  left: 31rem;
+}
+.scissorsBtn2 img {
+  margin: 1rem;
+}
+
+.lizardBtn2 {
+  position: relative;
+  border: double 10px transparent;
+  border-radius: 60px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  top: 22.5rem;
+  left: 17rem;
+}
+.lizardBtn2 img {
+  margin: 1rem;
+}
+.spockBtn2 {
+  position: relative;
+  border: double 10px transparent;
+  border-radius: 60px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  top: 11rem;
+  left: 7rem;
+}
+.spockBtn2 img {
+  margin: 1rem;
+}
+.pentagon {
+  margin: 0rem 38rem;
+}
+.close {
+  position: relative;
+  top: -22rem;
+}
+.rules2 {
+  position: fixed;
+  left: 90rem;
+  top: 44rem;
+  background: none;
+  border: 2px solid hsl(217, 16%, 45%);
+  padding: 0.6rem 2.6rem;
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+}
+.rockBtnHouse2 {
+  position: relative;
+  left: 72rem;
+  top: 2rem;
+  transform: scale(2);
+  border: double 10px transparent;
+  border-radius: 60px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom, hsl(349, 70%, 56%), hsl(349, 71%, 52%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.rockBtnHouse2 img {
+  margin: 1rem;
+}
+.paperBtnHouse2 {
+  position: relative;
+  left: 72rem;
+  top: 2rem;
+  transform: scale(2);
+  border: double 10px transparent;
+  border-radius: 60px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom, hsl(230, 89%, 65%), hsl(230, 89%, 62%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.paperBtnHouse2 img {
+  margin: 1rem;
+}
+.scissorsBtnHouse2 {
+  position: relative;
+  left: 72rem;
+  top: 2rem;
+  transform: scale(2);
+  border: double 10px transparent;
+  border-radius: 60px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom, hsl(40, 84%, 53%), hsl(39, 89%, 49%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.scissorsBtnHouse2 img {
+  margin: 1rem;
+}
+.lizardBtnHouse2 {
+  position: relative;
+  left: 72rem;
+  top: 2rem;
+  transform: scale(2);
+  border: double 10px transparent;
+  border-radius: 60px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.lizardBtnHouse2 img {
+  margin: 1rem;
+}
+.spockBtnHouse2 {
+  position: relative;
+  left: 72rem;
+  top: 2rem;
+  transform: scale(2);
+  border: double 10px transparent;
+  border-radius: 60px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.spockBtnHouse2 img {
+  margin: 1rem;
+}
+.resultParagraph2 {
+  color: white;
+  font-size: 3em;
+  position: relative;
+  top: -6rem;
+  left: 44rem;
+}
+.again2 {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  border: none;
+  padding: 1rem 5rem;
+  position: fixed;
+  top: 27rem;
+  left: 41.5rem;
+}
+@media screen and (max-width: 400px) {
+  .pentagon {
+    margin: -10rem 1rem;
+  }
+  .rockBtn2 {
+    transform: scale(1);
+    top: 20rem;
+    left: 14rem;
+  }
+  .paperBtn2 {
+    transform: scale(1);
+    top: 10rem;
+    left: 9rem;
+  }
+  .scissorsBtn2 {
+    transform: scale(1);
+    top: 3rem;
+    left: -6rem;
+  }
+  .lizardBtn2 {
+    transform: scale(1);
+    top: 13.5rem;
+    left: 2rem;
+  }
+  .spockBtn2 {
+    transform: scale(1);
+    top: 2rem;
+    left: -9rem;
+  }
+  .paperBtnHouse2 {
+    left: 14rem;
+    top: 1.5rem;
+    transform: scale(1);
+  }
+  .rockBtnHouse2 {
+    left: 14rem;
+    top: 1.5rem;
+    transform: scale(1);
+  }
+  .scissorsBtnHouse2 {
+    left: 14rem;
+    top: 1.5rem;
+    transform: scale(1);
+  }
+  .lizardBtnHouse2 {
+    left: 14rem;
+    top: 1.5rem;
+    transform: scale(1);
+  }
+  .spockBtnHouse2 {
+    left: 14rem;
+    top: 1.5rem;
+    transform: scale(1);
+  }
+  .rules2 {
+    left: 7rem;
+    top: 37rem;
+  }
+  .resultParagraph2 {
+    top: 0rem;
+    left: 5rem;
+  }
+  .again2 {
+    top: 30rem;
+    left: 4rem;
+  }
+  .module {
+    left: -1rem;
+    padding: 11rem 2rem;
+  }
+  .close {
+    top: 5rem;
+    left: 10rem;
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 401px) {
+  .pentagon {
+    margin: -10rem 4rem;
+  }
+  .rockBtn2 {
+    transform: scale(1);
+    top: 20rem;
+    left: 17rem;
+  }
+  .paperBtn2 {
+    transform: scale(1);
+    top: 10rem;
+    left: 13rem;
+  }
+  .scissorsBtn2 {
+    transform: scale(1);
+    top: 3rem;
+    left: -3rem;
+  }
+  .lizardBtn2 {
+    transform: scale(1);
+    top: 13.5rem;
+    left: 4rem;
+  }
+  .spockBtn2 {
+    transform: scale(1);
+    top: 2rem;
+    left: -6rem;
+  }
+  .paperBtnHouse2 {
+    left: 18rem;
+    top: 1.5rem;
+    transform: scale(1);
+  }
+  .rockBtnHouse2 {
+    left: 18rem;
+    top: 1.5rem;
+    transform: scale(1);
+  }
+  .scissorsBtnHouse2 {
+    left: 18rem;
+    top: 1.5rem;
+    transform: scale(1);
+  }
+  .lizardBtnHouse2 {
+    left: 18rem;
+    top: 1.5rem;
+    transform: scale(1);
+  }
+  .spockBtnHouse2 {
+    left: 18rem;
+    top: 1.5rem;
+    transform: scale(1);
+  }
+  .rules2 {
+    left: 10rem;
+    top: 42rem;
+  }
+  .resultParagraph2 {
+    top: 3rem;
+    left: 7rem;
+  }
+  .again2 {
+    top: 37rem;
+    left: 6rem;
+  }
+  .module {
+    left: -1rem;
+    padding: 13rem 4rem;
+  }
+  .close {
+    top: 5rem;
+    left: 10rem;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 501px) {
+  .pentagon {
+    margin: -10rem 13rem;
+  }
+
+  .rockBtn2 {
+    transform: scale(1);
+    top: 13rem;
+    left: 26rem;
+  }
+  .paperBtn2 {
+    transform: scale(1);
+    top: 2rem;
+    left: 22rem;
+  }
+  .scissorsBtn2 {
+    transform: scale(1);
+    top: -3rem;
+    left: 6rem;
+  }
+  .lizardBtn2 {
+    transform: scale(1);
+    top: 13.5rem;
+    left: -8rem;
+  }
+  .spockBtn2 {
+    transform: scale(1);
+    top: 2rem;
+    left: -18rem;
+  }
+  .paperBtnHouse2 {
+    left: 39rem;
+    top: 1.5rem;
+    transform: scale(1.5);
+  }
+  .rockBtnHouse2 {
+    left: 39rem;
+    top: 1.5rem;
+    transform: scale(1.5);
+  }
+  .scissorsBtnHouse2 {
+    left: 39rem;
+    top: 1.5rem;
+    transform: scale(1.5);
+  }
+  .lizardBtnHouse2 {
+    left: 39rem;
+    top: 1.5rem;
+    transform: scale(1.5);
+  }
+  .spockBtnHouse2 {
+    left: 39rem;
+    top: 1.5rem;
+    transform: scale(1.5);
+  }
+  .rules2 {
+    left: 20rem;
+    top: 42rem;
+  }
+  .resultParagraph2 {
+    top: -4rem;
+    left: 20rem;
+  }
+  .again2 {
+    top: 38rem;
+    left: 19rem;
+  }
+  .module {
+    left: -1rem;
+    padding: 13rem 4rem;
+  }
+  .close {
+    top: 5rem;
+    left: 10rem;
+  }
+}
